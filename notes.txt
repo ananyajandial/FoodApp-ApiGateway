@@ -1,0 +1,21 @@
+1. changed route maping to /users/admin and /order .. instead of foodapp/users
+
+2. did add these line in application.properties of each microservice
+
+eureka.instance.hostname=localhost
+eureka.instance.instance-id=${spring.application.name}:${server.port}
+eureka.instance.prefer-ip-address=false
+
+3. fixed users/orders in backend (UerService)
+
+4. Changed global handler to handle feign eceptions.
+
+5. changed controller of orderservice
+
+-------------------------------------------------
+
+              ----------   CREATING REACT APP ----------
+      npx create-react-app my-app
+      cd my-app
+      npm start
+
